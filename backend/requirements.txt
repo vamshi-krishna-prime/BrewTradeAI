@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+pydantic-settings
+faker
+apscheduler
+pandas
+anthropic
+python-multipart
+python-dateutil

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-label="BrewTrade AI">
+  <defs>
+    <linearGradient id="bt-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6C66B"/>
+      <stop offset="50%" stop-color="#C9A14B"/>
+      <stop offset="100%" stop-color="#A07B2A"/>
+    </linearGradient>
+    <linearGradient id="bt-gold-soft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4DA8F"/>
+      <stop offset="100%" stop-color="#C9A14B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark: stylised mug + hop -->
+  <g transform="translate(8,12)">
+    <rect x="6" y="14" width="44" height="56" rx="8" fill="none" stroke="url(#bt-gold)" stroke-width="3"/>
+    <rect x="14" y="6" width="28" height="14" rx="4" fill="url(#bt-gold-soft)"/>
+    <path d="M50 28 q14 4 14 18 q0 14 -14 18" fill="none" stroke="url(#bt-gold)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="20" cy="40" r="2.4" fill="url(#bt-gold-soft)"/>
+    <circle cx="30" cy="48" r="2.4" fill="url(#bt-gold-soft)"/>
+    <circle cx="22" cy="56" r="2.4" fill="url(#bt-gold-soft)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Inter, 'Segoe UI', Roboto, system-ui, sans-serif" font-weight="700">
+    <text x="88" y="58" font-size="36" fill="url(#bt-gold)" letter-spacing="0.5">BrewTrade</text>
+    <text x="316" y="58" font-size="36" fill="#1A1A1A" letter-spacing="2">AI</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="89" y="80" font-family="Inter, 'Segoe UI', Roboto, sans-serif" font-size="11" letter-spacing="3" fill="#A07B2A" font-weight="500">
+    CARIB BREWERY — INTERNATIONAL ORDERING INTELLIGENCE
+  </text>
+</svg>
