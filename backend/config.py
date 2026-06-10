@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     CLAUDE_MODEL: str = "claude-sonnet-4-5"
 
     # Database
-    DATABASE_URL = os.getenv("DATABASE_URL")
+    DATABASE_URL: str
 
     # App
     APP_NAME: str = "BrewTrade AI"
