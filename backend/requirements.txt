@@ -9,3 +9,4 @@ pandas
 anthropic
 python-multipart
 python-dateutil
+psycopg2-binary

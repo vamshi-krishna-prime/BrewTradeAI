@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     CLAUDE_MODEL: str = "claude-sonnet-4-5"
 
     # Database
-    DATABASE_URL: str = "sqlite:///./brewtrade.db"
+    DATABASE_URL: str = ""
 
     # App
     APP_NAME: str = "BrewTrade AI"
