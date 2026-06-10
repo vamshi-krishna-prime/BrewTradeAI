@@ -28,11 +28,11 @@ class Settings(BaseSettings):
 
     # CORS_ORIGINS = ["https://brewtrade-ai.onrender.com"]
 
-    CORS_ORIGINS = [
-    "http://localhost:5173",
-    "http://localhost:3000",
-    "https://brewtrade-ai.onrender.com"
-]
+    CORS_ORIGINS: list[str] = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://brewtrade-ai.onrender.com"
+    ]
 
     # Static / uploads
     STATIC_DIR: str = "static"
