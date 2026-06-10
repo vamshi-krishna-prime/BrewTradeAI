@@ -3,7 +3,7 @@ BrewTrade AI - Configuration Settings
 Central configuration for the BrewTrade AI backend.
 """
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
+import os
 
 class Settings(BaseSettings):
     """Application settings (env-overridable via .env if present)."""
@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     CLAUDE_MODEL: str = "claude-sonnet-4-5"
 
     # Database
-    DATABASE_URL: str = ""
+    DATABASE_URL = os.getenv("DATABASE_URL")
 
     # App
     APP_NAME: str = "BrewTrade AI"
@@ -21,10 +21,11 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # CORS
-    CORS_ORIGINS: list[str] = [
-        "http://localhost:5173",
-        "http://localhost:3000",
-    ]
+    # CORS_ORIGINS: list[str] = [
+    #     "http://localhost:5173",
+    #     "http://localhost:3000",
+    # ]
+    CORS_ORIGINS = ["https://brewtrade-ai.onrender.com"]
 
     # Static / uploads
     STATIC_DIR: str = "static"

@@ -1,9 +1,15 @@
 import axios from 'axios';
 
 // Axios instance pointing to the FastAPI backend via Vite's /api proxy.
+// const client = axios.create({
+//   baseURL: '/api',
+//   timeout: 30_000,
+// });
+
+// Axios instance pointing to the render backend site
 const client = axios.create({
-  baseURL: '/api',
-  timeout: 30_000,
+  baseURL: import.meta.env.VITE_API_URL,
+  timeout: 30000,
 });
 
 // Attach identity headers from localStorage on every request.
